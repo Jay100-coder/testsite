@@ -1,0 +1,350 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #57b4a8 !important;
+  border-color: #aefcf1 !important;
+}
+
+body {
+  background-color: #f3eff5;
+}
+
+/*Header*/
+
+header {
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.jumbotron {
+  padding-top: 0 !important;
+  background-color: inherit !important;
+}
+
+.jumbotron > img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 400px;
+}
+
+/*Quote*/
+
+blockquote {
+  width: 85%;
+  margin-top: -60px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 15px;
+  background: #aefcf241;
+  border: 1px solid #b0d2ab;
+  border-radius: 5px;
+}
+
+.p {
+  padding: 30px;
+}
+
+.quote__text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.block-quote--bordered {
+  border-left-width: 10px;
+  border-color: #359c8e;
+}
+
+.block-quote-text-credit {
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #d3d3d3;
+  font-size: 1.6em;
+  letter-spacing: 3px;
+}
+
+.block-quote-text-credit:before {
+  content: "\2014";
+}
+
+/*About Section*/
+
+.about {
+  background: url("https://thumbs.gfycat.com/EarlyPinkIrishwolfhound-size_restricted.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  width: 100% !important;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+}
+
+.card {
+  width: 30%;
+}
+
+.card + .card {
+  margin-left: 30px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  min-height: 300px !important;
+}
+
+.about > .btn {
+  width: 25%;
+  margin: 0 auto 60px auto;
+  transition: 350ms ease-in-out;
+}
+.about > .btn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .card-body {
+    padding: 5em;
+    font-size: 1.2em;
+  }
+
+  .card {
+    width: 75%;
+    margin-bottom: 25%;
+  }
+
+  .card + .card {
+    margin-left: 0;
+  }
+  .about > .btn {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+/*Business Description*/
+
+.business__descrip {
+  padding: 30px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.descrip__title {
+  color: #d4cfcfdc;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.descrip__subtitle {
+  font-size: 1.8em;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.descrip__paaragraph {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.descrip__img {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.descrip__btn {
+  margin-top: 20px;
+}
+
+.how {
+  text-align: justify;
+  margin-top: 10rem;
+}
+
+.founder {
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+.founder > img {
+  height: 350px;
+}
+
+.founder__descrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.founder__descrip > h3 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.founder__descrip__subtitle {
+  font-size: 1.5em;
+  font-weight: 450;
+}
+
+@media (max-width: 800px) {
+  .descrip__img {
+    display: none;
+  }
+}
+
+/*Contact Section*/
+.contact__section {
+  width: 100%;
+  background: url("https://thumbs.gfycat.com/EarlyPinkIrishwolfhound-size_restricted.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact__section-form {
+  padding: 0 10px;
+  text-align: center;
+  padding: 140px 40px;
+}
+
+.contact-form-text:focus {
+  background: #f4f4f4b2;
+}
+
+.contact-form-text {
+  display: block;
+  width: 65%;
+  margin: 30px auto;
+  border: 0;
+  padding: 20px 40px;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: #e2dfdf98;
+  color: white;
+}
+::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.contact-form-btn {
+  margin-top: 30px;
+  color: white !important;
+  width: 25%;
+  background: blue;
+  font-weight: 600 !important;
+  transition: 250ms ease-in-out !important;
+}
+
+.contact-form-btn:hover {
+  transform: scale(1.1);
+}
+
+textarea {
+  height: 200px;
+}
+
+.contact__section-title {
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 700;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .contact-form-btn {
+    width: 50%;
+    padding: 10px !important;
+  }
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  display: flex !important;
+  background-color: #111;
+}
+
+.footer__items {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.footer__items > span {
+  color: white;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.social-media__links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.social-media__item {
+  padding: 15px;
+  transition: 150ms ease-in-out;
+}
+
+.social-media__link > span {
+  font-size: 2em;
+  color: #359c8e;
+}
+
+.social-media__item:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+  .footer__items {
+    flex-direction: column;
+  }
+}
